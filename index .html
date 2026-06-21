@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranitex Barbing Saloon</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+background:linear-gradient(135deg,#ff0000,#ffffff);
+color:#111;
+}
+
+/* HEADER */
+header{
+background:rgba(255,255,255,0.9);
+padding:25px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+font-size:2.8rem;
+color:#c40000;
+letter-spacing:2px;
+}
+
+/* NAVIGATION */
+nav{
+margin-top:15px;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+color:#000;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#c40000;
+}
+
+/* HERO SECTION */
+.hero{
+height:400px;
+background-image:url("https://images.unsplash.com/photo-1621605815971-fbc98d665033");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+background:rgba(0,0,0,0.6);
+padding:20px 40px;
+font-size:2rem;
+border-radius:8px;
+}
+
+/* SERVICES */
+
+.services{
+padding:50px 20px;
+text-align:center;
+}
+
+.services h2{
+font-size:2rem;
+margin-bottom:30px;
+}
+
+.service-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#c40000;
+}
+
+.card p{
+padding:0 15px 20px;
+color:#444;
+}
+
+/* CONTACT */
+
+.contact{
+background:#fff;
+padding:50px 20px;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+header h1{
+font-size:1.8rem;
+}
+
+.hero{
+height:300px;
+}
+
+.hero h2{
+font-size:1.4rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Ranitex Barbing Saloon</h1>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Professional Haircuts & Beard Grooming</h2>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a">
+<h3>Classic Haircut</h3>
+<p>Professional haircut with modern styling.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
+<h3>Beard Grooming</h3>
+<p>Clean beard trimming and shaping.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605497787865-e6cfad4c9a1b">
+<h3>Hot Towel Shave</h3>
+<p>Relaxing shave with professional finishing.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: blackita419@gmail.com</p>
+
+<p>Phone: 091208245774</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ranitex Barbing Saloon | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+/* Smooth scroll */
+
+document.querySelectorAll("nav a").forEach(link=>{
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href"))
+.scrollIntoView({
+behavior:"smooth"
+});
+
+});
+});
+
+</script>
+
+</body>
+</html>
